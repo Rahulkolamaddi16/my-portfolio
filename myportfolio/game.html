@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Trivia Challenge</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Welcome Screen -->
+        <div id="welcome-screen">
+            <h1>Welcome to the Tech Trivia Challenge!</h1>
+            <p>Test your tech knowledge by answering these trivia questions.</p>
+            <button id="start-btn">Start Game</button>
+        </div>
+
+        <!-- Question Screen -->
+        <div id="question-screen" class="hidden">
+            <h2 id="question"></h2>
+            <div id="options"></div>
+            <div id="progress">Question <span id="current-question">1</span> of <span id="total-questions">5</span>
+            </div>
+            <div id="timer">Time Left: <span id="time-left">20</span> seconds</div>
+        </div>
+
+        <!-- Feedback Screen -->
+        <div id="feedback-screen" class="hidden">
+            <p id="feedback"></p>
+            <p id="correct-answer"></p>
+            <button id="next-btn">Next Question</button>
+            <button id="submit-btn" class="hidden">Submit</button>
+        </div>
+
+        <!-- Completion Screen -->
+        <div id="completion-screen" class="hidden">
+            <h2>Congratulations!</h2>
+            <p>You have completed the Tech Trivia Challenge.</p>
+            <p>Your Score: <span id="final-score"></span></p>
+            <button id="portfolio-btn">Visit My Portfolio</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
